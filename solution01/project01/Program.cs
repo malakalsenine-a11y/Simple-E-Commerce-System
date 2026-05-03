@@ -37,6 +37,27 @@
                     case 6: Checkout(); break;
                     case 7: return;
                 }
+
+
+                void AddProduct()
+                {
+                    Product p = new Product();
+
+                    Console.Write("Enter Id: ");
+                    p.Id = int.Parse(Console.ReadLine());
+
+                    Console.Write("Enter Name: ");
+                    p.Name = Console.ReadLine();
+
+                    Console.Write("Enter Price: ");
+                    p.Price = double.Parse(Console.ReadLine());
+
+                    Console.Write("Enter Quantity: ");
+                    p.Quantity = int.Parse(Console.ReadLine());
+
+                    products.Add(p);
+                }
+
             }
         }
     }

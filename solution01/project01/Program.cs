@@ -39,6 +39,9 @@
                 }
 
 
+                //Methods
+
+                //1- AddProduct() 
                 void AddProduct()
                 {
                     Product p = new Product();
@@ -57,6 +60,17 @@
 
                     products.Add(p);
                 }
+
+                //2- ViewProducts()
+
+                void ViewProducts()
+                {
+                    foreach (var p in products)
+                    {
+                        Console.WriteLine($"ID: {p.Id}, Name: {p.Name}, Price: {p.Price}, Qty: {p.Quantity}");
+                    }
+                }
+
 
             }
         }

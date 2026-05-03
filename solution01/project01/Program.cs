@@ -10,7 +10,8 @@
 
     internal class Program
     {
-
+        List<Product> products = new List<Product> ();
+        List<Product> cart = new List<Product> ();
 
         static void Main(string[] args)
         {

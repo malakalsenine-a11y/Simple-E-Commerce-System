@@ -71,6 +71,18 @@
                     }
                 }
 
+                // 3- SearchProduct(int id)
+
+                Product SearchProduct(int id)
+                {
+                    foreach (var p in products)
+                    {
+                        if (p.Id == id)
+                            return p;
+                    }
+                    return null;
+                }
+
 
             }
         }

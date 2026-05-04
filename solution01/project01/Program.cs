@@ -83,6 +83,16 @@
                     return null;
                 }
 
+                //4- SearchProduct(string name)
+                Product SearchProduct(string name)
+                {
+                    foreach (var p in products)
+                    {
+                        if (p.Name == name)
+                            return p;
+                    }
+                    return null;
+                }
 
             }
         }
